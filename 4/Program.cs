@@ -4,9 +4,9 @@
 // 8 -> 2, 4, 6, 8
 Console.Write("Введите число:");
 int N = int.Parse(Console.ReadLine()); 
-int b=0;
+int b=2;
 
 while (b<=N) {
-    Console.Write("");
+    Console.Write($"{b} ");
     b=b+2;
     }
