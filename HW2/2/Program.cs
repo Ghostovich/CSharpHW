@@ -6,5 +6,12 @@
 
 Console.Write("Введите число:");
 int a = int.Parse(Console.ReadLine());
-int[] b = new int[a];
-Console.Write(b[2]);
+char[] arr = a.ToString().ToCharArray();
+int b = arr.Length;
+if (b<3) {
+Console.Write("Третьей цифры нет");
+}
+else if (b>=3)
+{
+Console.Write(arr[2]);
+}
