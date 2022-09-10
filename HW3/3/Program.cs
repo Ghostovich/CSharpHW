@@ -2,18 +2,13 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-double f (int n) {
-for (int i = 0; i<=n; i++)
-{
-double res = Math.Pow(i, 3);
-return res;
-}
- 
-}
 
 Console.Write("Введите цифру:");
 int n = int.Parse(Console.ReadLine()); 
-
-double res = f(n); 
-Console.Write(res);
+int i=1;
+while (i<=n) {
+   int res=i*i*i;
+   i++;
+   Console.Write($"{res} ");
+}
 
