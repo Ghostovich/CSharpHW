@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Кампухтер\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\C#Sem1HW1\\HW1\\3\\3.csproj",
+      "projectUniqueName": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\3\\3.csproj",
       "projectName": "3",
-      "projectPath": "C:\\Users\\user\\Desktop\\C#Sem1HW1\\HW1\\3\\3.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\C#Sem1HW1\\HW1\\3\\obj\\",
+      "projectPath": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\3\\3.csproj",
+      "packagesPath": "C:\\Users\\Кампухтер\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Кампухтер\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
