@@ -3,35 +3,27 @@
 // 82 -> 10
 // 9012 -> 12
 
-
-
-int GetSum (int a)
+int GetSum(int a)
 {
-    int sum = 1;
-    if (a>0)
+    int[] arr = a.ToString().ToCharArray().Select(b => b - '0').ToArray();
+    int s = arr.Length;
+    int sum = 0;
+   for (int i = 0; i < s; i++)
     {
-       for (int i=1; i<=a; i++){
-        sum = i*sum;
-       } 
+        sum = sum + arr[i];
     }
-
-    if (a<=0){
-      sum = 0;
-    }
-
-return sum;
+    return sum;
 }
 
 Console.Write("Введите число:");
-
-try {
 int a = int.Parse(Console.ReadLine());
-
 
 int sum = GetSum(a);
 Console.Write(sum);
-}
 
-catch (Exception ex){
-Console.Write($"Неверный формат. Ошибка: {ex.Message}");  
-}
+
+
+
+
+
+

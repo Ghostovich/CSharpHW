@@ -2,25 +2,14 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int[] GetArray ()
+string GetMas(string a)
 {
-    int[] array = new int[8];
-
-       for (int i=0; i<array.Length; i++)
-       {
-        array[i] = new Random().Next(0,2);
-       } 
-
-return array;
+    string mas = $"[{a}]";
+    return mas;
 }
 
-void PrintArrayToConsole (int[] array)
-{
-          for (int i=0; i<=array.Length; i++)
-       {
-        Console.WriteLine(array[i]);
-       } 
-}
+Console.Write("Введите массив из 8 чисел:");
+string a = Console.ReadLine();
 
-int[] array = GetArray();
-PrintArrayToConsole(array);
+string mas = GetMas(a);
+Console.Write(mas);

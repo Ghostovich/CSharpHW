@@ -4,24 +4,18 @@
 // 2, 4 -> 16
 
 
-int GetSum (int a)
+int GetExp(int a, int b)
 {
-int number = Math.Abs(a);
-char[] arr = number.ToString().ToCharArray();
-int sum = arr.Length;
-return sum;
+    double c = Math.Pow(a, b);
+    int exp;
+    exp = (int)c;
+    return exp;
 }
 
-Console.Write("Введите число:");
-
-try {
+Console.Write("Введите число А:");
 int a = int.Parse(Console.ReadLine());
+Console.Write("Введите число В:");
+int b = int.Parse(Console.ReadLine());
 
-
-int sum = GetSum(a);
-Console.Write(sum);
-}
-
-catch (Exception ex){
-Console.Write($"Неверный формат. Ошибка: {ex.Message}");  
-}
+int exp = GetExp(a, b);
+Console.Write(exp);

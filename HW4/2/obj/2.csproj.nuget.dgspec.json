@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW3\\2\\2.csproj": {}
+    "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW4\\2\\2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW3\\2\\2.csproj": {
+    "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW4\\2\\2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW3\\2\\2.csproj",
+        "projectUniqueName": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW4\\2\\2.csproj",
         "projectName": "2",
-        "projectPath": "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW3\\2\\2.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW3\\2\\obj\\",
+        "projectPath": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW4\\2\\2.csproj",
+        "packagesPath": "C:\\Users\\Кампухтер\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW4\\2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Кампухтер\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
