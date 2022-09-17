@@ -2,13 +2,14 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-
-Console.Write("Введите цифру:");
-int n = int.Parse(Console.ReadLine()); 
-int i=1;
-while (i<=n) {
-   int res=i*i*i;
-   i++;
-   Console.Write($"{res} ");
+string GetMas(string a)
+{
+    string mas = $"[{a}]";
+    return mas;
 }
 
+Console.Write("Введите массив из 8 чисел:");
+string a = Console.ReadLine();
+
+string mas = GetMas(a);
+Console.Write(mas);

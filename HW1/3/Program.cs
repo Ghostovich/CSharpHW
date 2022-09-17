@@ -7,11 +7,13 @@
 Console.Write("Введите числа:");
 int a = int.Parse(Console.ReadLine()); 
 
-if (a%2) {
+int b = a%2;
+
+if (b==0) {
     Console.Write("Число четное");
     }
 
-else if (a%2) {
+else if (b!=0) {
     Console.Write("Число нечетное");
     }
 
