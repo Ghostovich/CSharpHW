@@ -5,11 +5,8 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-// int m = new Random().Next(3,5);
-// int n = new Random().Next(3,5);
-
-int m = 3;
-int n = 4;
+int m = new Random().Next(3,5);
+int n = new Random().Next(3,5);
 
 int[,] GetArray (int n, int m)
 {
