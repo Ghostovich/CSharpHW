@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Кампухтер\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW7\\2\\2.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW7\\2\\2.csproj",
       "projectName": "2",
-      "projectPath": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW7\\2\\2.csproj",
-      "packagesPath": "C:\\Users\\Кампухтер\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Кампухтер\\Desktop\\GeekBrains\\C#\\С\\HW\\1\\CSharpHW\\HW7\\2\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW7\\2\\2.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\GB\\intLP\\C#HW\\CSharpHW\\HW7\\2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Кампухтер\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
