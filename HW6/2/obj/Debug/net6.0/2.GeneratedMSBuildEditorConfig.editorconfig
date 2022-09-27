@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _2
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\Кампухтер\Desktop\GeekBrains\C#\С\HW\1\CSharpHW\HW6\2\
+=======
+build_property.ProjectDir = c:\Users\user\Desktop\GB\intLP\C#HW\CSharpHW\HW6\2\
+>>>>>>> 3c62f5f511ab15f5e1d36f056e722c2f508e0a40
