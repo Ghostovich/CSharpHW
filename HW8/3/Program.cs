@@ -11,55 +11,44 @@ int n = 2;
 
 int[,] GetArray1(int m, int n)
 {
-    int[,] array1 = {
-        {2,4},
-        {3,2}
-    };
-    // int[,] array1 = new int[n, m];
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < m; j++)
-    //     {
-    //         array1[i, j] = new Random().Next(1, 10);
-    //     }
-    // }
+    int[,] array1 = new int[n, m];
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            array1[i, j] = new Random().Next(1, 10);
+        }
+    }
     return array1;
 }
 
 int[,] GetArray2(int m, int n)
 {
-    int[,] array2 = {
-        {3,4},
-        {3,3}
-    };
-    // int[,] array2 = new int[n, m];
-    // int[,] array2 = new int[n, m];
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < m; j++)
-    //     {
-    //         array2[i, j] = new Random().Next(1, 10);
-    //     }
-    // }
+    int[,] array2 = new int[n, m];
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            array2[i, j] = new Random().Next(1, 10);
+        }
+    }
     return array2;
 }
 
 int[,] GetNew(int[,] arr1, int[,] arr2, int m, int n)
 {
+    int[,] arr3 = new int[n, m];
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
         {
-
-            
-            arr1[i, j] = arr1[i, j]*arr2[i, j] + arr1[i, j]*arr2[i, j];
-
-// a1 b1  c1 d1     a1c1+b1c2   a1d1+b1d2
-// a2 b2  c2 d2     a2c1+b2c2   a2d1+b2d2
-
+            for (int k = 0; k < n; k++)
+            {
+                arr3[i, j] += arr1[i, k] * arr2[k, j];
+            }
         }
     }
-    return arr1;
+    return arr3;
 }
 
 int[,] arr1 = GetArray1(m, n);
