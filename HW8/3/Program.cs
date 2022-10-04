@@ -6,43 +6,94 @@
 // 18 20
 // 15 18
 
-int m = new Random().Next(1,10);
-int n = new Random().Next(1,10);
+int m = 2;
+int n = 2;
 
-int[,] GetArray (int n, int m)
+int[,] GetArray1(int m, int n)
 {
-    int[,] array = new int[n, m];
-    for (int i=0; i<n;i++)
-    {
-        for (int j=0; j<m; j++)
-        {
-           array [i,j] = new Random().Next(-10,10);
-        }
-    }
-    return array;
+    int[,] array1 = {
+        {2,4},
+        {3,2}
+    };
+    // int[,] array1 = new int[n, m];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         array1[i, j] = new Random().Next(1, 10);
+    //     }
+    // }
+    return array1;
 }
 
-Console.WriteLine("Введите значение столбца:");
-int i = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите значение строки:");
-int j = int.Parse(Console.ReadLine());
-
-int[,] arr = GetArray(n,m);
-for (int k=0; k<n; k++)
+int[,] GetArray2(int m, int n)
 {
-    for (int l=0; l<m; l++)
+    int[,] array2 = {
+        {3,4},
+        {3,3}
+    };
+    // int[,] array2 = new int[n, m];
+    // int[,] array2 = new int[n, m];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         array2[i, j] = new Random().Next(1, 10);
+    //     }
+    // }
+    return array2;
+}
+
+int[,] GetNew(int[,] arr1, int[,] arr2, int m, int n)
+{
+    for (int i = 0; i < n; i++)
     {
-        Console.Write(arr [k,l]+" ");
+        for (int j = 0; j < m; j++)
+        {
+
+            
+            arr1[i, j] = arr1[i, j]*arr2[i, j] + arr1[i, j]*arr2[i, j];
+
+// a1 b1  c1 d1     a1c1+b1c2   a1d1+b1d2
+// a2 b2  c2 d2     a2c1+b2c2   a2d1+b2d2
+
+        }
+    }
+    return arr1;
+}
+
+int[,] arr1 = GetArray1(m, n);
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < m; j++)
+    {
+        Console.Write(arr1[i, j] + " ");
     }
     Console.WriteLine();
 }
-try
+Console.WriteLine();
+
+int[,] arr2 = GetArray2(m, n);
+for (int i = 0; i < n; i++)
 {
-    Console.WriteLine($"Значение заданного элемента равно {arr[i,j]}");
+    for (int j = 0; j < m; j++)
+    {
+        Console.Write(arr2[i, j] + " ");
+    }
+    Console.WriteLine();
 }
-catch
+Console.WriteLine();
+
+
+int[,] arrN = GetNew(arr1, arr2, m, n);
+Console.WriteLine($"Результирующая матрица: ");
+for (int i = 0; i < n; i++)
 {
-    Console.WriteLine("Такого значения нет!");
+    for (int j = 0; j < m; j++)
+    {
+        Console.Write(arrN[i, j] + " ");
+    }
+    Console.WriteLine();
 }
 
 

@@ -6,28 +6,65 @@
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
-int m = new Random().Next(1,10);
-int n = new Random().Next(1,10);
+int m = 4;
+int n = 4;
 
-double[,] GetArray (int m, int n)
-{   
-    double[,] array = new double[n, m];
-    for (int i=0; i<n;i++)
+int[,] GetArray(int m, int n)
+{
+    int[,] array = new int[n, m];
+    for (int i = 0; i < n; i++)
     {
-        for (int j=0; j<m; j++)
+        for (int j = 0; j < m; j++)
         {
-           array [i,j] = new Random().Next(-10,10)/10.0;
+            array[i, j] = new Random().Next(-10, 10);
         }
     }
     return array;
 }
 
-double[,] arr = GetArray(m, n);
-for (int i=0; i<n;i++)
+int[] GetNew(int[,] arr, int m, int n)
 {
-    for (int j=0; j<m; j++)
+    int[] arrayN = new int[4];
+    for (int i = 0; i < n; i++)
     {
-        Console.Write(arr [i,j]+" ");
+        for (int j = 0; j < m; j++)
+        {
+            arrayN[i] += arr[i, j];
+        }
+    }
+    return arrayN;
+}
+
+int GetMin(int[] arrN)
+{
+    int j = 0;
+    int min = arrN[0];
+    for (int i = 0; i < arrN.Length; i++)
+    {
+        if (arrN[i] < min)
+        {
+            min = arrN[i];
+            j = i;
+        }
+    }
+    return j;
+}
+
+int[,] arr = GetArray(m, n);
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < m; j++)
+    {
+        Console.Write(arr[i, j] + " ");
     }
     Console.WriteLine();
 }
+Console.WriteLine();
+
+int[] arrN = GetNew(arr, m, n);
+
+int minS = GetMin(arrN);
+Console.Write($"{minS + 1} строка");
+
+
+
