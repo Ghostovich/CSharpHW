@@ -4,29 +4,18 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-int fun (int n)
-{
-    if (n==0)
-    {
-        return 0;
-    }
-    int sum = n+fun(n-1);
-        return sum;
-    
-
-
-}
-
-
-string show(int n)
+string Show (int n)
 {
     if (n==1)
     {
         return "1";
     }
-    string result = show(n-1)+" "+ n;
+    string result = Show(n-1)+" "+ n;
     return result;
 }
 
-write vvedite num
-n = convert  
+Console.WriteLine("Введите значение: ");
+int n = int.Parse(Console.ReadLine());
+
+string print = Show(n);
+Console.WriteLine(print);
